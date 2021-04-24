@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fullpage.css">
+    <style>
+        @font-face { font-family: "Jetbrains"; src: url("./Jetbrains.ttf"); }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Jetbrains", sans-serif; }
+        .section { background-color: #212529; color: white; }
+        #s2 .fp-controlArrow { top: 90%; }
+        #s2 .fp-controlArrow.fp-prev { width: 50%; left: -10px; }
+        #s2 .fp-controlArrow.fp-next { left: 50%; width: 50%; }
+        
+        .bubble { background-color: white; width: 80px; height: 80px; border-radius: 50%; }
+        .bar { margin: 0 2px; width: 20px;height: 20px; background-color: #131111; }
+        .place-column-center { display: grid; place-items: center; }
+        .vl { border-left: 1px solid white; }
+        .bg-darker { background-color: #131111; }
+        @media(max-width: 576px) { 
+            .section, .section .fp-slide, .section .fp-tableCell{ height: auto !important; }
+            .fp-controlArrow { display: none; }
+        }
+
+        #projects img { filter: brightness(0.4); transform: scale(1); transition: all .2s ease; position: relative; }
+        #projects img:hover { z-index: 1; filter: brightness(1); transform: scale(1.05); }
+    </style>
+</head>
+<body>
+    <div id="fullpage">
+        <div id="menu">
+            <nav class="fixed-top navbar navbar-expand navbar-dark bg-dark">
+                <small class="d-none d-md-block text-white position-absolute" style="top: 10px; left: 10px;">Last Updated: 04/23/2021</small>
+                <div class="w-md-50 justify-content-center container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/me.png" width=40>
+                    </a>
+
+                    <div id="navbarNav">
+                        <ul class="flex-wrap text-white align-items-center navbar-nav">
+                            <li class="nav-item">
+                                <a data-menuanchor="person" class="nav-link active" href="#person">Introduction</a>
+                            </li> <span class="d-none d-md-block">|</span> 
+                            <li class="nav-item">
+                                <a data-menuanchor="history" class="nav-link" href="#history">Past Lives</a>
+                            </li> <span class="d-none d-md-block">|</span> 
+                            <li class="nav-item">
+                                <a data-menuanchor="machine" class="nav-link" href="#machine">My Works</a>
+                            </li> <span class="d-none d-md-block">|</span> 
+                            <li class="nav-item">
+                                <a data-menuanchor="voice" class="nav-link" href="#voice">A Voice</a>
+                            </li> <span class="d-none d-md-block">|</span> 
+                            <li class="nav-item">
+                                <a data-menuanchor="freelancer" class="nav-link" href="#freelancer">Hire me!</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+
+        <section class="section pb-4 pb-md-0" id="s1">
+           	<div class="slide" data-anchor="s1_slide1">
+                <div class="row px-2 px-md-0 mt-5 pt-5 pt-md-0 mt-md-0">
+                    <div class="col-10 col-md-6 place-column-center mx-auto mx-md-0"><img src="images/hero.jpg" class="rounded-3 img-fluid"></div>
+                    <div class="col-auto d-none d-md-block vl my-auto mx-0" style="height: 350px;"></div>
+                    <div class="col-12 text-center text-md-start pt-4 pt-md-0 col-md-4 place-column-center">
+                        <div>
+                            <h1 class="display-1">Hi!</h1>
+                            <p>My name is Bashar Abuarja.</p>
+                            <p>I am an aspiring web developer, and an extremely enthusiastic tech junkie!</p>
+                            <p>I do web development because I love it,<br>(and it can get seriously helpful sometimes)</p>
+                            <p>If you're reading this, chances are you've been to one of my <a href="#freelancer">freelancer profiles</a>, which are currenly active and fully operational</p>
+                            <p>I also have a <a href="https://youtube.com/abuarjabashar">YouTube channel</a> where I record what I learn, and occasionally make tutorials</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" data-anchors="s1_slide2">
+                <div class="row container mx-auto h-100" style="margin-top: 100px;">
+                    <div class="col-12">
+                        <h1 class="text-center display-1">Stats</h1>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="ms-0 ms-md-2 mt-5">
+                                <div class="place-column-center bubble position-relative">
+                                    <h3 class="position-absolute" style="top: -40px;">Age</h3>
+                                    <h1 class="m-0 text-dark">19</h1>
+                                </div>
+                            </div>
+                            
+                            <div class="ms-0 ms-md-2">
+                                <h3>Nationalities</h3>
+                                <div class="d-flex justify-content-center">
+                                    <h1 class="m-0 mx-1 text-dark"><img src="images/rza.png"></h1>
+                                    <h1 class="m-0 mx-1 text-dark"><img src="images/ps.png"></h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mt-5">
+                            <h4 style="margin: 0 8px 0 0;">Front-End</h4>
+                            <div class="bg-white bar"></div>
+                            <div class="bg-white bar"></div>
+                            <div class="bg-white bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="d-flex align-items-center mt-2">
+                            <h4 style="margin: 0 8px 0 0;">Back-End</h4>
+                            <div class="bg-white bar"></div>
+                            <div class="bg-white bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="d-flex align-items-center mt-2">
+                            <h4 style="margin: 0 8px 0 0;">CMS</h4>
+                            <div class="bg-white bar"></div>
+                            <div class="bg-white bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="d-flex align-items-center mt-2">
+                            <h4 style="margin: 0 8px 0 0;">Linux</h4>
+                            <div class="bg-white bar"></div>
+                            <div class="bg-white bar"></div>
+                            <div class="bg-white bar"></div>
+                            <div class="bg-white bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="d-flex align-items-center mt-2">
+                            <h4 style="margin: 0 8px 0 0;">Caffeine</h4>
+                            <div class="bg-white bar"></div>
+                            <div class="bg-white bar"></div>
+                            <div class="bg-white bar"></div>
+                            <div class="bg-white bar"></div>
+                            <div class="bg-white bar"></div>
+                            <div class="bg-white bar"></div>
+                            <div class="bg-white bar"></div>
+                            <div class="bg-white bar"></div>
+                            <div class="bg-white bar"></div>
+                            <div class="bg-white bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- past lives --> 
+        <section class="section" id="s3">
+           	<div class="slide" data-anchor="s3_slide1">
+                <div class="row px-3 mx-auto h-100">
+                    <div class="col-md-6 col-12 pb-4 pb-md-0 place-column-center">
+                        <img src="images/wateenplus.png" class="img-fluid rounded-3">
+                    </div>
+                    <div class="text-center text-md-start col-md-5 col-12 place-column-center">
+                        <div>
+                            <h1 class="display-6 m-0">Wateen Plus Ltd.</h1>
+                            <p class="text-secondary">2018 - 2021</p>
+                            <p class="lead">A small business based in Palestine, Gaza, consisting mostly of digital artists</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- my works -->
+        <section id="projects" class="section">
+            <div class="container py-5 py-md-0">
+                <div class="row">
+                    <div class="p-0 col-md-3"><img class="img-fluid" src="images/pepeflix.png"></div>
+                    <div class="p-0 col-md-3"><img class="img-fluid" src="images/pepeflix.png"></div>
+                    <div class="p-0 col-md-3"><img class="img-fluid" src="images/pepeflix.png"></div>
+                    <div class="p-0 col-md-3"><img class="img-fluid" src="images/pepeflix.png"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- philosophy -->
+        <section class="section pb-5 pb-md-0" id="s2">
+           	<div class="slide" data-anchor="s2_slide1">
+                <div class="row px-3 mx-auto h-100" style="margin-top: 100px;">
+                    <div class="col-12">
+                        <h1>
+                            Having a Google Account
+                        </h1>
+                        <small>Published 04/23/2021</small>
+                        <hr class="w-50 text-white">
+                        <div class="rounded-1 p-4 bg-darker">
+                            <p>Having a single centralized online "account" for everything can be a convenience for some people<br>
+                            But if you're not very careful, that convenience might turn into the most chilling disaster of your life!</p>
+                            <p>I say this not from the general standpoint of "the internet is never safe", "choose good passwords", etc<br>
+                            But from personal experiences (being a tech-savvy person with less tech-savvy friends) and encounters with<br>
+                            real examples of people getting <a href="https://wikipedia.com">phished</a> and falling for tricks I never believed worked, EVER!</p>
+                            <p>But I've drastically changed my mind about that, phishing attacks WORK! And their consequences can not be<br>
+                            described with any word better than "chilling"<br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- hire me -->
+        <section class="section">
+            <div class="row justify-content-center">
+                <div class="col-auto"><a href="https://fiverr.com"><img src="images/fiverr.png" height=66 class="m-2 rounded-2"></a></div>
+                <div class="col-auto"><a href="https://freelancer.com"><img src="images/freelancer.png" height=66 class="m-2 rounded-2"></a></div>
+                <div class="col-auto"><a href="mailto:abuarjabashar@gmail.com"><img src="images/email.png" height=66 class="m-2 rounded-2"></a></div>
+            </div>
+        </section>
+    </div>
+    <script src="js/fullpage.js"></script>
+    <script>
+        var fp = new fullpage('#fullpage', {
+            menu: '#menu',
+            anchors: ['person', 'history', 'machine', 'voice', 'freelancer'],
+            navigationTooltips: ['Introduction', 'Past Lives', 'My Works', 'A Voice', 'Hire me'],
+            responsiveWidth: 768
+        });
+    </script>
+</body>
+</html>
