@@ -27,6 +27,11 @@
             .section, .section .fp-slide, .section .fp-tableCell{ height: auto !important; }
             .fp-controlArrow { display: none; }
         }
+        @media(min-width: 768px) { 
+            .w-md-50 {
+                width: 50% !important;
+            }
+        }
 
         #projects img { filter: brightness(0.4); transform: scale(1); transition: all .2s ease; position: relative; }
         #projects img:hover { z-index: 1; filter: brightness(1); transform: scale(1.05); }
@@ -57,7 +62,7 @@
                                 <a data-menuanchor="voice" class="nav-link" href="#voice">A Voice</a>
                             </li> <span class="d-none d-md-block">|</span> 
                             <li class="nav-item">
-                                <a data-menuanchor="freelancer" class="nav-link" href="#freelancer">Hire me!</a>
+                                <a data-menuanchor="freelancer" class="nav-link" href="#freelancer">Find me!</a>
                             </li>
                         </ul>
                     </div>
@@ -187,10 +192,10 @@
         <section id="projects" class="section">
             <div class="container pt-5 py-md-0">
                 <div class="row justify-content-center">
-                    <a href="./projects/purebzar" class="p-0 col-6 text-decoration-none">
+                    <a href="./projects/purebzar" class="p-0 col-auto text-decoration-none">
                         <div class="position-relative">
                             <img class="img-fluid" src="images/purebzar.jpg">
-                            <h1 style="transform:translateX(-50%);" class="position-absolute top-50 start-50 text-white">E-Commerce</h1>
+                            <h3 style="transform:translateX(-50%); text-wrap: nowrap;" class="position-absolute top-50 start-50 text-white">Ecommerce</h3>
                         </div>
                     </a>
                 </div>
@@ -225,14 +230,12 @@
         <section class="section">
             <div class="container">
                 <div class="row justify-content-center">
-                    <a class="col-md-4 col-6" href="https://fiverr.com"><img src="images/fiverr.png" class="m-2 rounded-2 img-fluid"></a>
-                    <a class="col-md-4 col-6" href="https://freelancer.com"><img src="images/freelancer.png" class="m-2 img-fluid rounded-2"></a>
-                    <a class="col-md-4 col-6" href="https://upwork.com"><img src="images/upwork.png" class="m-2 rounded-2 img-fluid"></a>
-                    <a class="col-md-4 col-6" href="https://instagram.com"><img src="images/instagram.png" class="m-2 rounded-2 img-fluid"></a>
-                    <a class="col-md-4 col-6" href="https://twitter.com"><img src="images/twitter.png" class="m-2 rounded-2 img-fluid"></a>
-                </div>
-                <div class="row justify-content-center">
-                    <a class="col-4" href="mailto:abuarjabashar@gmail.com"><img src="images/email.png" class="m-2 rounded-2 img-fluid"></a>
+                    <a class="col-md-4 col-10" href="https://www.fiverr.com/abuarjabashar"><img src="images/fiverr.png" class="m-2 rounded-2 img-fluid"></a>
+                    <a class="col-md-4 col-10" href="https://www.freelancer.com/u/bashrj"><img src="images/freelancer.png" class="m-2 img-fluid rounded-2"></a>
+                    <a class="col-md-4 col-10" href="https://upwork.com"><img src="images/upwork.png" class="m-2 rounded-2 img-fluid"></a>
+                    <a class="col-md-4 col-10" href="https://www.instagram.com/abuarjabashar/"><img src="images/instagram.png" class="m-2 rounded-2 img-fluid"></a>
+                    <a class="col-md-4 col-10" href="https://twitter.com/AbuarjaBashar"><img src="images/twitter.png" class="m-2 rounded-2 img-fluid"></a>
+                    <a class="col-md-4 col-10" href="mailto:abuarjabashar@gmail.com"><img src="images/email.png" class="m-2 rounded-2 img-fluid"></a>
                 </div>
             </div>
         </section>
@@ -242,7 +245,7 @@
         var fp = new fullpage('#fullpage', {
             menu: '#menu',
             anchors: ['person', 'history', 'machine', 'voice', 'freelancer'],
-            navigationTooltips: ['Introduction', 'Past Lives', 'My Works', 'A Voice', 'Hire me'],
+            navigationTooltips: ['Introduction', 'Past Lives', 'My Works', 'A Voice', 'Find me'],
             responsiveWidth: 768
         });
 
