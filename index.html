@@ -3,47 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Welcome</title>
+    <title>Welcome | abuarjabashar.github.io</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fullpage.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/me.png">
-    <style>
-        @font-face { font-family: "Jetbrains"; src: url("./Jetbrains.ttf"); }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: "Jetbrains", sans-serif; }
-        .section { background-color: #212529; color: #f8f9fa; }
-        #s2 .fp-controlArrow { top: 90%; }
-        #s2 .fp-controlArrow.fp-prev { width: 50%; left: -10px; }
-        #s2 .fp-controlArrow.fp-next { left: 50%; width: 50%; }
-        
-        .bubble { background-color: white; width: 80px; height: 80px; border-radius: 50%; }
-        .bar { margin: 0 2px; width: 20px;height: 20px; background-color: #131111; }
-        .place-column-center { display: grid; place-items: center; }
-        .vl { border-left: 1px solid white; }
-        .bg-darker { background-color: #131111; }
-        ul.tech-used { list-style-image: url('images/nested.png'); }
-        ul.tech-used li { font-size: 1.2rem; }
-        .overflow-x-hidden { overflow-x: hidden !important; }
-        @media(max-width: 576px) { 
-            .section, .section .fp-slide, .section .fp-tableCell{ height: auto !important; }
-            .fp-controlArrow { display: none; }
-        }
-        @media(min-width: 768px) { 
-            .w-md-50 {
-                width: 50% !important;
-            }
-        }
-
-        #projects img { filter: brightness(0.4); transform: scale(1); transition: all .2s ease; position: relative; }
-        #projects img:hover { z-index: 1; filter: brightness(1); transform: scale(1.05); }
-    </style>
 </head>
 <body>
     <div id="fullpage">
         <div id="menu">
             <nav id="menu-nav" class="fixed-top navbar navbar-expand navbar-dark bg-dark">
-                <small class="d-none d-md-block text-white position-absolute" style="top: 10px; left: 10px;">Last Updated:<br>04/25/2021</small>
+                <small class="d-none d-md-block text-white position-absolute" style="top: 10px; left: 10px;">Last Updated:<br>04/30/2021</small>
                 <div class="w-md-50 justify-content-center container-fluid">
                     <a class="navbar-brand" href="#">
                         <img src="images/me.png" width=40>
@@ -194,9 +164,15 @@
         <section id="projects" class="section">
             <div class="container pt-5 py-md-0">
                 <div class="row justify-content-center">
-                    <a href="./projects/purebzar" class="p-0 col-6 text-decoration-none">
+                    <a href="./projects/purebzar" class="p-0 col-4 text-decoration-none">
                         <div class="position-relative">
                             <img class="img-fluid" src="images/purebzar.jpg">
+                            <h3 style="transform:translateX(-50%); text-wrap: nowrap;" class="position-absolute top-50 start-50 text-white">Ecommerce</h3>
+                        </div>
+                    </a>
+                    <a href="./projects/acme-clothing" class="p-0 col-4 text-decoration-none">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="images/acme-clothing.jpg">
                             <h3 style="transform:translateX(-50%); text-wrap: nowrap;" class="position-absolute top-50 start-50 text-white">Ecommerce</h3>
                         </div>
                     </a>

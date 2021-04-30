@@ -1,0 +1,29 @@
+@font-face { font-family: "Jetbrains"; src: url("../Jetbrains.ttf"); }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: "Jetbrains", sans-serif; }
+.section { background-color: #212529; color: #f8f9fa; }
+#s2 .fp-controlArrow { top: 90%; }
+#s2 .fp-controlArrow.fp-prev { width: 50%; left: -10px; }
+#s2 .fp-controlArrow.fp-next { left: 50%; width: 50%; }
+
+.bubble { background-color: white; width: 80px; height: 80px; border-radius: 50%; }
+.bar { margin: 0 2px; width: 20px;height: 20px; background-color: #131111; }
+.place-column-center { display: grid; place-items: center; }
+.vl { border-left: 1px solid white; }
+.bg-darker { background-color: #131111; }
+ul.tech-used { list-style-image: url('../images/nested.png'); }
+ul.tech-used li { font-size: 1.2rem; }
+.overflow-x-hidden { overflow-x: hidden !important; }
+@media(max-width: 576px) { 
+    .section, .section .fp-slide, .section .fp-tableCell{ height: auto !important; }
+    .fp-controlArrow { display: none; }
+}
+@media(min-width: 768px) { 
+    .w-md-50 {
+        width: 50% !important;
+    }
+}
+
+#projects img { filter: brightness(0.4); transform: scale(1); transition: all .2s ease; position: relative; }
+#projects img:hover { z-index: 1; filter: brightness(1); transform: scale(1.05); }
+
